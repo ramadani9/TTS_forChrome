@@ -8,7 +8,7 @@ function Jawaban()
                                level4:[['database'],['display'],['padding']], // jawaban soal huruf K
                                level5:[['caption'],['template']] // jawaban soal huruf T
                             }
-                            
+                var count = 0 
                 var ans1 = []
                 var ans2 = []
                 var ans3 = []
@@ -55,32 +55,32 @@ function Jawaban()
                 
                 if(result0 == soal.level1[0] && result1 == soal.level1[1] && result2 == soal.level1[2])
                 {
-                    
+                    count = count +1
                     return true
                 }
 
                 else if(result0 == soal.level2[0] && result1 == soal.level2[1] && result2 == soal.level2[2] && result3 == soal.level2[3])
                 {
-                    
+                    count = count +1
                     return true
                 }
 
                 else if(result0 == soal.level3[0] && result1 == soal.level3[1] && result2 == soal.level3[2])
                 {
-                    
+                    count = count +1
                     return true
                 }
 
                 else if(result0 == soal.level4[0] && result1 == soal.level4[1] && result2 == soal.level4[2])
                 {
-                    
+                    count = count +1
                     return true
                 }
 
                 else if(result0 == soal.level5[0] && result1 == soal.level5[1])
                 {
-                    
-                    alert("Selamat kamu sudah menyelesikan soal Level 1 !!")
+                    count = count +1
+                    alert("Selamat kamu sudah menyelesikan "+ count +" soal Level 1 !!")
                     return true
                 }
                 
